@@ -1,0 +1,59 @@
+-<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉</title>
+	<link rel="stylesheet" href="css/1.css">
+</head>
+<body>
+	<div class="top-all">
+		<div class="top-inside-h">
+			网站首页
+		</div>
+		<div class="top-inside">
+			新闻中心
+			<div class="top-down">
+				<div class="diva">二级分类</div>
+            	<div class="diva">二级分类</div>
+            	<div class="diva">二级分类</div>
+			</div>
+		</div>
+		<div class="top-inside1">
+			产品列表
+			<div class="top-down1">
+				<div class="diva">二级分类</div>
+            	<div class="diva">二级分类</div>
+            	<div class="diva">二级分类</div>
+			</div>
+		</div>
+	</div>
+	<script src='jq/jquery-1.10.2.min.js'></script>
+	<script>
+	/*$(function(){	
+		$('.top-inside').hover(function(e) {
+   	    	 $(this).find('top-down').stop().slideToggle()
+   	 	});
+	})网上找到这个尝试了一下，没成功，所以就用另一个比较简陋的下拉试试*/
+	$(function(){
+            $('.top-inside').mouseover(function(e){
+            $(this).find('.top-down').toggle();
+            });
+            $('.top-inside').mouseout(function(e){
+            $(this).find('.top-down').toggle();
+            });
+            $('.top-inside1').mouseover(function(e){
+            $(this).find('.top-down1').toggle();
+            });
+            $('.top-inside1').mouseout(function(e){
+            $(this).find('.top-down1').toggle();
+            });
+            $('.diva').hover(function(){
+                $(this).addClass('after');  
+            		},function(){
+                				$(this).removeClass('after'); 
+            					}
+ 		 );/*鼠标悬停之后的变色*/
+     });
+	</script>
+</body>
+</html>

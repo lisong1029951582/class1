@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.top-all{
+	width: 100%;
+	background-color: #008B8B;
+	height: 30px;
+}
+.top-inside{
+	width: 200px;
+	background-color: #008B8B;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	color: white;
+}
+.top-inside1{
+	width: 200px;
+	background-color: #008B8B;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	color: white;
+}
+.top-inside-h{
+	width: 200px;
+	background-color: #008B8B;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	color: white;
+}
+.top-down{
+	position: absolute;
+    display:none;
+    left: 200px;
+    top: 30px;
+    background-color:#008B8B;
+    width: 200px;
+}
+.top-down1{
+	position: absolute;
+    display:none;
+    left: 400px;
+    top: 30px;
+    background-color:#008B8B;
+    width: 200px;
+}
+/*下拉出来的边框的样式.*/
+.top-diva{
+}
+.after{
+	background-color: #FF8C00;
+}
